@@ -211,11 +211,11 @@ p{
 @media screen and (max-width: 350px) {
 
     .carte{
-        height: 120px;
+        height: 100px;
     }
     
     .info{
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     
 }
