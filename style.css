@@ -76,7 +76,6 @@ p{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 10px 0 0;
     margin-bottom: 50px;
     color: #9fa3a5;  
 }
@@ -213,6 +212,10 @@ p{
 
     .carte{
         height: 120px;
+    }
+    
+    .info{
+        margin-bottom: 10px;
     }
     
 }
