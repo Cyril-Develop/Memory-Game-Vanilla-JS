@@ -103,7 +103,7 @@ p{
 
 .double-face {
     border: 2px solid #7E8086; 
-    box-shadow: 0 0 15px #7E8086; 
+    box-shadow: 0 2px 8px #7E8086; 
     border-radius: 20px;
     position: relative;
     width: 100%;
@@ -210,12 +210,12 @@ p{
 
 @media screen and (max-width: 350px) {
 
-    .carte{
-        height: 100px;
-    }
-    
     .info{
         margin-bottom: 10px;
+    }
+
+    .carte{
+        height: 100px;
     }
     
 }
