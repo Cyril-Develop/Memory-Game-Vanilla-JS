@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Memory Game</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">     
+        </head>
+        <body>
+    
+                <!-- Accueil  -->
+
+                <div class="page-accueil">
+
+                    <h1><span class="joker">🃏</span> Jeu de mémoire <span class="joker">🃏</span></h1>
+
+                    <div class="info-regle">
+                        <p>Vous avez 1 minute 30 pour trouver les paires.</p>
+                        <p>Les cartes sont redistribuées à chaque nouvelle partie.</p>
+                        <p>Bonne chance !</p>
+                        <p class="info-jouer">Cliquez pour jouer</p>
+                    </div>  
+
+                </div>
+
+                <!-- reponse à envoyer -->
+
+                <div class="reponse">
+                    <p class="resultat"></p>
+                    <p class="rejouer"></p>
+                </div>
+                
+                    <!-- carte et timer-->
+                    
+                    <div class="info">
+    
+                        <div class="temps">Temps restant </div>
+                        
+                        <div class="timer">01 : 30</div> 
+    
+                    </div>
+                    
+                    <div class="container-carte">
+                        
+                        <div class="carte"  data-attr="batman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/batman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg"> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="black">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/black.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="deadpool">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/deadpool.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="hulk">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/hulk.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="ironman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/ironman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="joker">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/joker.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="superman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/superman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte"  data-attr="wolverine">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/wolverine.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                        <div class="carte"  data-attr="joker">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/joker.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="quin">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/quin.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="spiderman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/spiderman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="wolverine">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/wolverine.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="carte"  data-attr="superman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/superman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="hulk">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/hulk.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="batman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/batman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="quin">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/quin.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="spiderman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/spiderman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="black">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/black.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="deadpool">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/deadpool.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carte"  data-attr="ironman">
+                            <div class="double-face">
+                                <div class="face">
+                                    <img src="img/ironman.jpg">
+                                </div>
+                                <div class="arriere">
+                                    <img src="img/dos_carte.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                     
+            
+
+                </div>
+
+
+            <script src="main.js"></script>
+        </body>
+    </html>
